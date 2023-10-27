@@ -1,0 +1,1818 @@
+:toc: macro
+:toclevels: 5
+
+
+{nbsp} +
+{nbsp} +
+{nbsp} +
+{nbsp} +
+{nbsp} +
+{nbsp} +
+
+[.text-center]
+[.larger{font-size=20}]
+
+[.center]
+image::IITD_logo.svg[IITD_logo,alt="IITD",width=350,height=350,float="center"]
+
+
+
+{nbsp} +
+{nbsp} +
+
+[.text-center]
+[.larger{font-size-20}]
+[big]#*ELP305*#
+[.text-center]
+[.larger{font-size-20}]
+{nbsp} [big]#*DESIGN AND SYSTEM LABORATORY*#
+{nbsp} +
+{nbsp} +
+[.text-center]
+[big]#*Tribe B - Bharat*# +
+{nbsp} +
+Report +
+{docdate} +
+Version 4.6.3 +
+
+
+<<<
+
+
+
+:pdf-theme: default
+:pdf-page-layout: portrait
+:pdf-page-margin: 0.7in
+:doctype:  book
+:pagenums : 2
+
+<<<
+
+toc::[]
+
+<<<
+
+== 1. Navigating the Thought Process
+
+=== 1.1 What is DoXFroX ?
+
+The phrase "Do anything from anywhere" refers to the expanding capacity to work, learn, and carry out daily activities from any location due to technological improvements.
+
+First off, we weren't entirely sure what DoXFroX was. We had only just considered ideas involving remote activities. Some of them are :
+
+* *Remote work* :
+Instead of travelling to an office, employees can work remotely from their homes or any other location with internet access.
+
+* *Mobile Telemedicine Platform* :
+Patients can obtain medical advice and treatment online through telemedicine without visiting a doctor's office.
+
+* *E-learning* :
+Instead of physically going to a school or university, students can take classes and do assignments online.
+
+* *Smart home automation* :
+A system that can automate several tasks around the house, such as regulating the temperature and switching on and off the lights. Microcontrollers and sensors might be used to detect this.
+
+* *Solutions for Renewable Energy* :
+Create sustainable and reliable energy solutions for rural areas. Energy storage options, wind turbines, and solar power systems might be included in the solutions.
+
+=== 1.2 Description of Initial Ideas
+
+Before concluding the final idea, we reviewed many ideas. The following points highlight a few of them briefly:
+
+* One being the idea for farming, the backbone of India. In this, we have discussed the general problems the farmers face, like which type of seed they should select, which crop to be grown depending on the season, what amount of fertilisers to be used, information about the soil profile of the place, etc. There are government organisations and schemes, but they are not available for all farmers, particularly small farmers. So we came up with the idea of making a web or an app which could assist the farmer with the soil type based on the geographical location of the field. Based on soil type, it assists the crop type. It can also calculate decisions that maximise yield and profits. This idea can be implemented using ML, app development, APIs and other tools. In addition, we can also include the operation of water motors on the farm from anywhere. We noticed that such devices are already in markets, but they have yet to reach small and rural area farmers. By adding some extra features, design and market value, we can spread to all sections of farmers. This software can be connected to the farmer's mobile phone. Sales and marketing online could also be introduced.
+
+* Another idea was the development of a tele or mobile medical kit. This is for the people who cannot travel long distances during an emergency and is particularly useful for the people in remote areas. The kit should be portable and should be affordable for all sections of people. The kit contains many medical devices like digital stethoscopes, vital sign monitors, video conferencing systems, etc. For the project purpose, we thought of choosing any of the devices, for example, a digital stethoscope, which requires an electronic sensor, amplifier, and microphone. In addition, we also thought about stopping the cause of disease like a sensor-based product, in case of malaria or dengue, which sprays on contact or a small version of a shocker which kills mosquitoes on contact for household purposes at an affordable price and ease maintenance.
+
+* The next idea is intelligent home automation. In this, we can develop the idea of controlling the home appliances like refrigerators, air conditioners using a remote from anywhere. Internet of Things technology can be used in which sensors can get the current state of each device. In addition to this, we also thought of smart controlling of the car using sensors and actuators like automatic wipers in case of rain and turning on the headlights when it is dark. While parking, we can use ultrasonic and electromagnetic sensors; by using a temperature sensor, we can automatically control temperature.
+
+* One of the other ideas was livestock management using mobile phones. In this, we decided to develop an app such that the farmer could track their livestock health and manage breeding and feeding schedule. There could be alerts when animals need medical attention or during some emergency.
+
+The remaining ideas, in brief, were the development of a webpage with the most common  ML pre-implemented in backend linear regression or classifiers, designing a drone to keep a check on the farms or package goods or can also be used for aerial photography, teaching music instruments using intelligent gloves.
+
+=== 1.3 The Power-Sector
+
+How did we approach the power sector? How is the power sector related to DoXFroX?
+
+Yes, life in rural areas can be satisfying. The primary things (technologies) that can help people in rural  to lead fulfilling lives are:
+
+* Access to renewable energy sources, such as solar or wind power, can supply dependable and long-lasting electricity for buildings, businesses, and electronics. Even in places with poor infrastructure, this can encourage the pursuit of fulfilling work, communication, and personal development.
+* Internet accessibility can give people access to information, educational resources, and communication technologies to support their pursuit of personal development, meaningful employment, and interpersonal connections.
+* Technology for sustainable agriculture can help growers maximise crop productivity and effectively manage resources. Examples include drip irrigation, precise farming methods, and crop disease detection. This can promote regional economic growth, environmental practices and food production.
+* Access to communication and information resources that can foster personal development, fulfilling employment, and interpersonal connections are made possible by mobile communication tools like smartphones and mobile networks.
+* Telemedicine platforms, which enable remote access to medical advice and treatment, can increase access to healthcare services in rural areas.
+
+Out of all these needs, Renewable energy resources can help people do more from anywhere in rural areas. As they often lack access to electricity, which makes it challenging for people to carry out everyday chores after sunset, access to solar power can improve their quality of life.The inability to access grid electricity in many rural places can make it challenging to power essential equipment and machinery.In general, adopting renewable energy options in rural areas can assist in increasing access to modern benefits and provide people greater freedom to act wherever they are, especially in places with poor infrastructure.
+
+=== 1.4 Final Idea Description
+
+For our DoXFoX, Do-X(anything)-From-X(anywhere), we have selected the widely available solar energy, a renewable form of energy. The idea focuses on sustainable energy development by utilising various engineering techniques. In this, we have taken the basic idea of a solar tracker, which aligns itself in solar radiation direction, different from the conventional unidirectional solar cell. By providing some external aid, we can be more efficient and provide more energy than conventional methods.
+
+* First, people and organisations may depend less on conventional power sources like fossil fuels or the electrical grid by harvesting solar energy more effectively. Working or living in distant or off-grid areas where access to conventional power sources may be restricted or unreliable might give you more freedom and flexibility.
+
+* Second, improving energy efficiency can help people and businesses better use the energy they produce.
+
+Overall, improving energy efficiency through sun-tracking solar panels can be a significant enabler of the "Do anything from anywhere" mindset. It can offer greater energy independence, versatility, and freedom to work and live in novel and innovative ways, irrespective of location or conventional infrastructure.
+
+
+
+== 2. Abstract
+
+This report describes the implementation of a rotating solar panel. The main aim is to provide a solution that aims to enhance the efficiency of solar panels through sustainable energy development. The proposed model utilizes engineering techniques inspired by solar tracking, similar to a sunflower, that allows for converting a stationary unidirectional solar cell to a rotatable one. This model generates more power than a conventional system without external assistance. The installation is made more accessible, thus increasing the product's scalability. With this solution, it is possible to achieve a more efficient and sustainable energy source that can contribute to the global shift towards cleaner and renewable energy sources.
+
+
+The product design cycle starts with requirements, which include apparatus, rotational mechanisms, and embedded systems. Then a set of specifications is developed with the help of the given requirements. These specifications have two sub-sections, namely structural and embedded specifications. Structural includes rod specifications, solar panel holding material specifications, disk-shaped base material specifications, and gears specifications. Embedded specifications include microprocessors, motors, and sensor specifications. There is a mention of material costs at wholesale prices.
+
+== 3. Motivation
+We had numerous inspirations for making this product. Some of them are:
+
+* *Sustainability:* Our product enhances the power output of a solar panel, increasing India's green power capital.
+
+* *Efficiency:* A rotatable solar panel is more efficient than a fixed one. An efficient design is one of the main motivations for our product design.
+
+* *Convenience:* Our product is made so that it does not require expert interference. This increases the scalability of our product.
+
+* *Cost-Effective:* A cleaner energy source should also be cost-effective, and we have chosen components accordingly.
+
+* *Adaptability:* Our product is suitable for use on a global scale because it can be adapted to any geographical area with sufficient solar power generation potential.
+
+
+
+== 4. Requirements
+
+[.center]
+.Requirements
+image::Requirementsmap.png[IITD_logo,alt="IITD",width=800,height=800,float="center"]
+
+
+Our product is based on a 60-cell solar panel. All calculations have been done likewise. The average dimensions of a 60-cell solar panel are about 65” x 40” x 1.5”. The weight of a 60-cell solar panel ranges from 18 to 23 kg, which again depends on the manufacturer.
+
+<<<
+
+=== 4.1 Rotational Apparatus
+
+
+*Dual Axis of Freedom:*
+
+* Dual-axis solar trackers adjust the angle of solar panels in two dimensions, resulting in higher efficiency than single-axis trackers. They produce 45-50% more power annually compared to stationary panels.
+
+* The solar trackers must rotate from -90^o^ to 90^o^(East to West) to maintain an normal angle to the sun throughout the day , resulting in higher power output than fixed-tilt or single-axis solar panels.
+
+
+
+*Efficient Motors:*
+
+* We can  create a manual apparatus for horizontal movement because two motors are costly and it will consume more power.
+
+* The power requirements for the motors should be low. RPH (rotations per hour) required for each horizontal and vertical axis motor would be a minimum of 0.088. The motor should produce a minimum torque of 0.1N-m.
+
+* They should require low maintenance and must not wear out quickly.
+
+* They should be easy to control with a simple digital signal for convenience.
+
+*Economical to manufacture:*
+
+* The parts for the rotational apparatus should be economical to manufacture.
+
+* Various parts, such as the motor and gears, should be inexpensive to avoid heavy production costs.
+
+* Spur gears may deliver excellent efficiency at low speeds and are straightforward and inexpensive.
+
+*Controllers:*
+
+* Arduino can be used to control the motor's speed and direction of rotation.
+* By using light sensors or GPS modules, an Arduino can determine the sun's position and adjust the solar panel's angle and orientation to ensure that it is always facing the sun.
+
+=== 4.2 Apparatus
+
+
+*Mounting material:*
+
+* Stainless steel and  aluminium are commonly used for solar mounting structures. Mounting racks can also be made from different materials.
+
+* Many manufacturers use aluminium due to its low weight, corrosion resistance, strength, and compatibility with solar module frames made of aluminium. It’s important to know about the material of the mounting structures to avoid post-project issues.
+
+* It's important to consider factors such as the weight and size of the solar panel, the wind and snow loads at the installation location, and any local building codes or regulations that may apply.
+
+* These factors will help determine the appropriate dimensions and materials for the mounting system to ensure it is strong, stable, and safe.
+
+*Structural Strength:*
+
+* The structure should at least satisfy a minimum ASCE 7-10 safety standards threshold. It should be able to handle a wind load of about 200 N and a torque of 0.1 N-m.
+
+* We will require strong enough rods for them to support this structure. They should be corrosion-resistant and lightweight.
+
+*Cost-effective:*
+
+* The apparatus should be economical to manufacture. The material for mounting structures should be inexpensive to avoid high production costs.
+
+* Plastic-made mounting racks can be a viable option for structure mounting.
+
+=== 4.3 Embedded Systems
+
+
+*Micro-processors:*
+
+* We intend to use a microcontroller like Arduino UNO, which is based  on ATmega328P  capable of running at low power, and simultaneously able to control and analyse incoming analog data from multiple sensors, hence computing solar direction.
+
+* It should be able to give instructions to the DC motor for precise movements, hence able to output PWM signals to the motor controller.
+
+*Sensors:*
+
+* Photoresistors / Light dependent resistors are generally used to detect light. Analysing their analog output gives us the direction of direct sunlight.
+
+* We require sensors consuming low voltage and power and ability to generate analog output based on the sun's intensity.
+
+* GPS technology can also be utilized to determine the exact latitude and longitude of the solar panel’s location. This can be used with RTC IC to estimate the sun's relative position to the solar panel’s position.
+
+<<<
+
+== 5. Specifications
+
+[.center]
+.Specifications
+image::spec_mindmap .png[IITD_logo,alt="IITD",width=800,height=800,float="center"]
+
+=== 5.1 Structural Specifications
+
+==== 5.1.1 Vertical Rod Material
+The vertical rod has to withstand a weight of about 19 Kg of the solar panel, the weight of the L-shaped column (where the solar panel will rest) and the torque that the whole system will exert, as it will be at some distance from the neutral axis.
+The rod also should be able to withstand torque exerted by winds and the additional weight caused to surroundings and environment, like the weight of snow and dust.
+
+Steel with protective coating and aluminium are the best options available for this.
+Steel, being strong and durable, require a protective coating, whereas aluminium, being lightweight and corrosion-resistant, needs to have more thickness than steel.
+
+The dimensions of the rod are as follows:
+
+* Height - 1 m
+* Length of square side - 21 cm
+* Inner Radius - 10 cm
+* Outer Radius - 10.5 cm
+* Four supports at 90^o^
+** Support height: 15 cm
+** Support length: 21 cm
+** Support with base of square of side : 3.5 cm
+
+
+We choose 3003 aluminium as our rod material as it gives good formability, workability and drawing characteristics.
+
+==== 5.1.2 Cylindrical Hollow Base
+
+
+The base would be a hollow cylinder with gears in its inner circle on the lower base, which is placed near ground, and the circular disk above it helps stabilize the rod against torque.
+
+.*Design Considerations:* +
+* Strength and Stability: The mounting system must be solid and stable enough to support the solar panel's weight and withstand external forces, such as wind and snow.
+
+* Ease of Installation: The design should be simple and easy to install, requiring minimal tools and expertise.
+
+* Flexibility: The design should be flexible enough to accommodate different sizes and types of solar panels and other installation locations and environments.
+
+*Maintenance:* The design should allow for easy maintenance and repair, if necessary.
+
+.*Material Considerations:* +
+* Durability: The base material should be solid and durable enough to withstand harsh weather conditions and prevent corrosion over time.
+
+* Weight: The base material should be lightweight enough to make the mounting system easy to transport and install.
+
+* Cost: The base material should be affordable and within budget while providing strength and durability.
+
+* Availability: The base material should be readily available and accessible for sourcing and manufacturing.
+
+Based on these considerations, some potential base materials for a cylindrical solar panel mounting system include aluminium or stainless steel. Both materials are strong, lightweight, and corrosion-resistant, making them ideal for outdoor applications. Additionally, they are widely available and can be sourced at a reasonable cost.
+
+In terms of design, a simple and effective approach could be to use a series of aluminium or steel poles arranged in a circular pattern, with brackets or clamps at the top to hold the solar panel in place. This design would provide stability and flexibility while being easy to install and maintain.
+
+The torque exerted by the solar panel and L-shaped column is more than 150 Nm. Considering torque exerted by winds and environmental factors, the radius of the base must be at least 0.5 m.
+
+
+* Base radius : 30 cm +
+* Thickness of base material : 0.3 cm +
+* Height : 30 cm +
+
+
+The material we choose for this will be steel as we need a material with high strength.
+
+
+
+==== 5.1.3 L-shaped Holding Material
+
+
+Our product is based for Solar panel of dimensions 1.65 m x 1.0 m .
+
+.Taking into account the different latitudes, this panel can be placed in India,
+* For the vertical plate of the L-shaped structure, +
+Height : 1.45 m +
+Width : 1.2 m +
+Thickness : 0.3 cm
+* For the horizontal plate of the L-shaped structure, +
+Height : 1.75 m +
+Width : 1.2 m +
+Thickness : 0.3 cm
+* Sliders in the Horizontal Plates have 7 holes from 0.94 m to 1.64 m.
+
+
+.We need a material with the following factors:
+* Durability: This should be solid and durable to withstand windy weather conditions and prevent corrosion over time.
+
+* Weight: It should be lightweight.
+
+* Cost: It should be affordable without compromising other factors.
+* Availability: Depending on the above factors, aluminium and stainless steel can be used. Due to its lightweight and excellent corrosive resistance, 3003 aluminium is a good choice for this.
+
+
+
+
+
+==== 5.1.4 Gear and Ball Bearings
+
+
+*Material of Ball Bearing:* SAE 52100 steel is the industry standard for bearing courses.
+Chromium steel (SAE 52100) contains 1% carbon and 1.5% chromium. Plastic, porcelain, and even stainless steel can all be used to create bearings. In addition to its high strength, SAE 52100 also has high elasticity, high machinability, and high consistency. AISI 440C stainless steel, prized for its resistance to corrosion, is another frequently employed substance. AISI 440C has higher machining costs and lower weight capacities than 52100. 440C's strength is equal to 85 percent of 52100's at 70 degrees Fahrenheit. To lessen bearing disturbance or lengthen fatigue life, other martensitic stainless steels are also employed.
+
+*Dimensions:* Given the inputs from the rod sub-vertical, taking the rod diameter as 21 cm, the ball bearings could have an internal diameter bigger than 20.5 cm considering the friction.
+
+*Material for Gears:* We have worked with all of these materials over the years, though steel is by far the most prevalent. For our purposes, steel is ideal because of its low cost, high strength-to-weight ratio, high resilience to wear, and potential for further improvement via heat treatment.
+
+*Product link:* https://amzn.eu/d/85ed5WN
+
+<<<
+
+=== 5.2 Embedded Systems Specifications
+
+==== 5.2.1 Microcontrollers
+Texas Instruments (TI) MCUs are 16-bit RISC-based mixed-signal processors made with minimal power consumption in mind. Our product requirements state that the microcontroller must be capable of handling thousands of different tasks while remaining inexpensive, simple to program, and light on power usage. Arduino UNO meets all of the requirements, so it's a good fit for our offering.
+
+[.center]
+.Arduino UNO
+image::Arduino-UNO.png[IITD_logo,alt="IITD",width=400,height=400,float="center"]
+
+
+
+
+
+
+*Power specifications*
+
+* RAM retention : 0.1 μA
+* Real-time clock mode : 2.5 μA
+* Power efficiency: 165 μA / MIPS active
+* Features fast wake-up from standby mode : less than 5μs
+
+*Device parameter*
+
+* Flash options: up to 512 KB
+* RAM options: up to 66KB
+* ADC options: 12-bit SAR
+* GPIO options: 74 pins
+* Other integrated peripherals: USB, LCD, DAC, Comparator_B, DMA, 32x32
+multiplier, power management module (BOR, SVS, SVM, LDO), watchdog
+timer, RTC, Temp sensor
+
+*Special features*
+
+* *Instant Wakeup:* The MCU supports fast resumption from low power modes. The microcontroller unit (MCU) has an internal digitally controlled oscillator (DCO) that can source up to 25 MHz and be active and steady in 1μs, allowing for this ultra-fast wake-up.
+
+* *Flexible Clocking System:* The MCU clock system allows the device to enter a number of low-power modes (LPMs) by enabling and disabling different clocks and oscillators. By selectively enabling clocks as needed, the flexible clocking system reduces unnecessary power usage.
+
+*Product{nbsp}Link:*{nbsp}https://www.indiamart.com/proddetail/arduino-uno-r3-smd-atmega328p-board-22190904455.html?pos=3&pla=n
+
+
+==== 5.2.2 Motor
+Based on the requirements, the motor selected for the product is *Doncerns TT-45ZY*. The following are its specifications:
+
+* Brand Name: DoncERNs
+* Torque: 0.1-150kgf.cm
+* Commutation: Brush
+* Speed(RPM): 1-6000 rpm
+* Brush type: Metal carbon brush
+* Gearbox Material: Steel
+* Rated Voltage: 12/24 V
+* Model Number: TT-45ZY
+* Gearbox Size: 60x95mm
+* Rated power: 0- 35 W
+* ContinuousCurrent(A): 4 A
+
+[.center]
+.DC Motor Doncerns TT45ZY
+image::DC_Motor_Updated_Img 2.jpeg[IITD_logo,alt="IITD",width=300,height=300,float="center"]
+
+* *Controlling the Angle of Rotation*
+
+One standard method to control the angle of rotation of a low RPM DC motor is to use pulse width modulation (PWM), which involves varying the duration of the power supply voltage applied to the motor to control its speed and direction.
+The motor will run at a speed that is halfway between zero and full speed if we swiftly turn the electricity on and off. A p.w.m. controller turns on the motor in a succession of pulses precisely like this. Pulse Width Modulation is the term for changing (modulating) the pulse width to control the motor speed. However, It is used with an electronic circuit named H-bridge. The H-bridge can be used to switch the motor's direction by changing the voltage's polarity applied to the motor's terminals. The motor will rotate in one direction by applying a positive voltage to one terminal and a negative voltage to the other. By reversing the polarity of the voltage, the motor will rotate in the opposite direction.
+
+
+
+[.center]
+.Circuit to Control Revolutions in a DC Motor
+image::DC_Motor2_Updated_Img 1.jpeg[IITD_logo,alt="IITD",width=400,height=400,float="center"]
+
+*Product{nbsp}Link:*{nbsp}https://www.alibaba.com/product-detail/Gear-Motor-High-Torque-12V-24V_1600358395566.html?s=p
+
+
+==== 5.2.3 Sensor
+Light Dependent Resistors (LDRs), also known as photoresistors, are passive components that change their resistance in response to changes in the amount of light falling on them. LDRs are commonly used in solar trackers to detect the position of the sun and adjust the orientation of solar panels accordingly.
+
+The specific LDR chosen for a given application will depend on factors such as the required resistance range, peak sensitivity, and maximum voltage, as well as the availability and cost of the component.
+Some commonly used LDRs in solar trackers include the GL5528 , SFH 5711 and SFH 5712 series, RP-L7014 and RP-L7024 series, and VTD series.
+
+The GL55xx series LDRs have the following properties:
+
+*	Max and Min resistance: The GL5528 has a resistance range of 1kΩ to 10kΩ, while the GL5537 has a range of 10kΩ to 500kΩ.
+
+*	The dark resistance of the GL55xx series LDRs decreases over time when exposed to light. This can be compensated for with circuitry or software.
+
+*	Max power dissipation: The GL55xx series LDRs can handle a maximum power dissipation of 100mW.
+
+*	Max voltage: The maximum voltage that can be applied to the GL55xx series LDRs is 150V DC.
+
+*	Peak wavelength: The peak sensitivity of the GL5528 is around 540nm, while the GL5537 is around 700nm.
+
+*	The GL55xx series LDRs are rated for operation up to a maximum temperature of 85°C. Exceeding this temperature can cause damage to the device.
+
+*	Temperature coefficient of resistance (TCR): This is a measure of how much the resistance of the LDR changes with temperature. The GL55xx series LDRs have a TCR of about -0.5%/°C.
+
+*	Rise and fall times: These are measures of how quickly the LDR can respond to changes in light levels. The rise time is the time it takes for the LDR to go from 10% to 90% of its final resistance when the light level changes from dark to light, and the fall time is the time it takes for the LDR to go from 90% to 10% of its final resistance when the light level changes from light to dark. The rise and fall times of the GL55xx series LDRs depend on the specific model and range from a few milliseconds to several hundred milliseconds.
+
+*	Spectral response: This is a measure of how sensitive the LDR is to the light of different wavelengths. The GL55xx series LDRs have a peak spectral response in the visible range (around 550 nm) and are less sensitive to light outside of this range.
+
+*	Operating temperature range: The GL55xx series LDRs can typically operate over a wide temperature range, from -40°C to 85°C.
+
+*	Package type: The GL55xx series LDRs come in a variety of package types, including through-hole, surface mount, and radial leaded packages.
+
+
+
+*Product{nbsp}Link:* https://robu.in/product/5mm-ldr-pack-of-10/
+
+[.center]
+.GL5528 Cross sectional diagram
+image::sensor.png[IITD_logo,alt="IITD",width=400,height=400,float="center"]
+
+<<<
+== 6. Design Cycle
+
+[.center]
+.Design Cycle
+image::designmap.png[IITD_logo,alt="IITD",width=800,height=800,float="center"]
+
+
+=== 6.1 Discarded Designs
+
+==== 6.1.1 Design 1
+
+
+[cols="a,a", frame=none, grid=none, align = center]
+|===
+
+| 
+.Discarded Design 1
+image::DD12.png[IITD_logo,alt="IITD",pdfwidth = 100%]
+| image::DD13.png[IITD_logo,alt="IITD",pdfwidth = 90%]
+|===
+<<<
+
+This was the initial design idea we started working on.The design works with one axis of rotation along the motor and one manual option for changing solar panel angles relative to sun rays. The most efficient is when sun rays are normal to the solar panel and that angle should be chosen.
+
+
+Modifications suggested:
+
+
+* We do not need grooves. Instead, we can use a slider-type mechanism to allow any possible angle.
+
+
+* An off-centered rod can create a more stable structure. The center of gravity will shift to have a stable equilibrium.
+
+
+Reasons to discard this design :
+
+
+* Unstable structure, holding 20+ kgs on a single hinge.
+
+
+* Cover needs to be personalized for a specific type of solar panel. Apparatus renders useless if the consumer chooses to change the solar panel.
+
+
+==== 6.1.2 Design 2
+
+
+Sun rises in the east and sets in the west, making a 180° rotation in a day. Assuming that the sun is up for 12hrs a day, we can rotate our apparatus 15° per hour so that in 12 hrs, it covers 180°.
+
+
+We wouldn’t require any motor, and hence it is cheaper energy-wise. This is an excellent reason to implement such a device in an electrical energy-deficit region.
+
+
+There are various alternatives to employing a motor to build a constant-speed rotating device. Here are some methods to consider:
+
+
+* *Gravity-powered mechanism:* You may design a mechanism that employs gravity to keep a constant rotational speed. One method is to build a basic pendulum device that swings back and forth at a consistent speed. You can make a rotational device that travels at a consistent speed by attaching a spinning item to the pendulum.
+
+
+* *Spring-powered mechanism:* You may also build a mechanism that employs a spring to keep the rotation at a steady speed. This may be accomplished by creating a mechanism that winds up and then releases a spring, allowing the spinning item to turn consistently.
+
+
+* *Wind-powered mechanism:* Another option is to design a wind-powered mechanism. This may be accomplished by creating a device that employs wind turbines or sails to spin the item continuously.
+
+
+* *Magnetic-powered mechanism:* You may also build a mechanism that employs magnets to keep a consistent rotation speed. This may be accomplished by creating a device that uses magnetic fields to move the item at a steady speed.
+
+
+Overall, finding a source of energy that can be utilized to power the mechanism is the key to establishing a constant-speed rotating mechanism without a motor.
+
+
+Reasons to discard this design :
+
+
+* *Manual Labor:* We have to manually reset the solar panel's position every night as it has completed a 180° rotation.
+
+
+* *Solar Tracking:* As we rotate 15° every hour, we cannot track the sun accurately every instant, which decreases efficiency. This mimics a path followed by the sun but at a constant pace.
+Our primary focus is to use and incorporate solar tracker technology into our product. But the above design doesn't require it. Hence, we are discarding the design.
+
+
+==== 6.1.3 Design 3
+
+
+.Discarded Design 3
+image::dd3.png[IITD_logo,alt="IITD",pdfwidth = 100%]
+
+We checked the output voltage obtained for different angles, around 12-15 different angles and set the solar panel at the angle at which maximum output was obtained. Here are output voltages at some of the angles.
+
+
+*Reasons to discard this design*
+
+
+This design uses too much extra power of the motor and thus is very inefficient in the conversion of solar energy.
+Also, we used Brute Force method to determine the angle at which maximum output is obtained which is also a waste of time and resources.
+
+<<<
+
+=== 6.2 Final Design
+
+==== 6.2.1 Mechanical
+
+===== 6.2.1.1 Tracker Assembly
+//maybe add a line saying here are the casd pics made using software freecad
+//cad photos
+.Isometric view
+image::Asem_iso1.jpeg[IITD_logo,alt="IITD",pdfwidth = 70%]
+.Front view
+image::Asem_right1.jpeg[IITD_logo,alt="IITD",pdfwidth = 70%]
+.Side view
+image::Asem_front1.jpeg[IITD_logo,alt="IITD",pdfwidth = 70%]
+
+.Top view
+image::Asem_top1.jpeg[IITD_logo,alt="IITD",pdfwidth = 70%]
+
+
+===== 6.2.1.2 L-Shape and Slider
+// maybe not leave a line out for solar angle
+//content-Solar Angle
+*Solar Angle* +
+The solar angle, also known as the angle of incidence, is vital in solar panels because it determines the amount of solar energy the panel can capture. If the angle is too steep, the sunlight may be reflected away before absorption, resulting in lower energy production. If the angle is too shallow, the sunlight may not be absorbed efficiently, resulting in lower energy production. +
+
+Therefore, solar panels are typically installed at an angle that optimises the amount of sunlight they receive based on the latitude of their location and the time of year. This angle is known as the tilt angle and is usually adjusted throughout the year to ensure maximum energy production. +
+
+The solar panel must be such that sun rays are normal to it.
+We searched and listed the solar angles at the four extreme geographical corners of the country across all five seasons to get the range of the solar angle. The table below lists the observations. +
+//content-table
+|===
+|Place|Latitude|Longitude|Min. Solar Angle |Max Solar Angle
+
+|Srinagar
+|34.0474’N
+|74.8204'E
+|34.13
+|79.07
+
+|Jaisalmer
+|26.9116’N
+|70.9124'E
+|41.33
+|84.11
+
+|Anjaw
+|28.114’N
+|96.8269'E
+|38.54
+|82.75
+
+|Kanyakumari
+|8.0792’N
+|77.5499’E
+|59.69
+|85.74
+
+|===
+
+So, we can see that the solar angle θ ranges from [35^o^,85^o^] and design our apparatus accordingly.
+// maybe just use trigonometery
+
+We can obtain the lengths of the vertical and horizontal plates using trigonometry.
+
+We know the hypotenuse L(length of solar panel = 1.64 m) and angle θ. So, the length of the vertical plate = L*cos(θ) and some tolerance. This is the maximum for the least value of θ.
+
+So, length of vertical plate = L*cos(35°) + some tolerance = 1.45m
+
+Similarly, the length of the horizontal plate = L*sin(θ) and some tolerance. This would be the maximum for maximum θ.
+
+So, length of the horizontal plate = L*sin(85°) + some tolerance = 1.75m
+
+Holes are taken from L*sin(θ~min~) to L*sin(θ~max~). A total of seven equidistant holes are taken.
+
+
+
+// tech drawings
+.Technical Drawing: L-shape
+[%inline,format=svg]
+image::L-shaped plates.svg[opts=interactive,pdfwidth = 75%]
+.Isometric view : L-Shape
+image::Lshape_iso.png[IITD_logo,alt="IITD",pdfwidth = 75%]
+
+* The L-shaped rod is welded to the vertical rods face.
+* Holes on the base are made using drills
+
+
+
+
+.Technical Drawing: Slider
+[%inline,format=svg]
+image::slider.svg[opts=interactive,pdfwidth = 75%]
+
+//cad photos
+.Isometric view: Slider
+image::Slider_iso.png[IITD_logo,alt="IITD",pdfwidth = 90%]
+
+<<<
+
+===== 6.2.1.3 Vertical Rod
+.Technical Drawing: Rod
+[%inline,format=svg]
+image::Rod_TechDraw.svg[opts=interactive,pdfwidth = 75%]
+.Isometric view : Rod
+image::Rod_iso.jpeg[IITD_logo,alt="IITD",pdfwidth = 75%]
+
+* The vertical rod is fixed tightly with the inner circle of the ball bearing.
+* The outer ring of the ball bearings is welded to the base material.
+
+
+
+*REASONS FOR ADDING EXTRA SUPPORT:*
+It made the structure more stable, and reduced the pressure on the single rod due to more holding area of the structure.
+
+<<<
+
+===== 6.2.1.4 Ball Bearing
+
+.Technical Drawing: Ball Bearing
+image::Ball_bearing_techdraw.svg[opts=interactive,pdfwidth = 75%]
+
+.Isometric View : Ball Bearing
+image::ISO_Ball_with_Balls.png[IITD_logo,alt="IITD"]
+
+<<<
+
+===== 6.2.1.5 Gears and Base Structure
+
+.Isometric view : Gears 1
+image::Gear_iso.jpeg[IITD_logo,alt="IITD",pdfwidth = 75%]
+
+.Isometric view : Gears 2
+image::G2_iso.png[IITD_logo,alt="IITD",pdfwidth = 75%]
+
+.Isometric view : Base
+image::Base_iso.png[IITD_logo,alt="IITD",pdfwidth = 75%]
+
+<<<
+
+==== 6.2.2 Embedded
+
+===== 6.2.2.1 CAD positioning and Shadowing model
+
+.Shadowing Method- CAD Model
+image::cadpostioning.png[]
+
+* *Placement of CAD Model*
+
+This is the light-sensing model. We are going to position this in front of the plate that is oriented horizontally within the L-shaped contraption. The model is positioned so that it is directly in front of the solar panel, and this positioning ensures that the panel always faces the sun in the same direction as the model does. Because it will receive the same amount of sunshine as the solar panel and, in any other location, it would be hampered by the shadows cast by other components of the apparatus, here is the best position to place it. There is also the possibility that the model is casting a shadow on the solar panel, which lowers the panel's efficiency.
+
+* *Shadowing method*
+
+In solar tracking systems, the shadowing method is used to determine the position of the sun in relation to the solar panel. This method entails mounting a small device that casts a shadow onto a sensor or set of sensors on the panel. As the sun moves across the sky, the position of the shadow shifts, enabling the sensors to detect the sun's location and alter the panel's orientation accordingly.
+
+As shown in Fig 4, we shielded our model with three rectangular walls with four LDR sensors arranged symmetrically. The shadowing technique is relatively simple and inexpensive in comparison to other methods, such as using photovoltaic cells or digital sun trackers.
+
+* *Algorithm for Motor Rotation*
+
+In the above Fig 24, the marked No.1 indicates the first photo-resistor. +
+The value of the potential drop across this Photo-Resistor has been stored in the integer-type variable LDR1. Similarly, the variables LDR2, LDR3, LDR4 have been assigned for the other three different photo-resistors. 
+
+The following cases are possible in an experimental setup.
+
+. The Value of LDR1 is maximum. +
+The system is rotated clockwise until stopping criterion is met. The rotation ensures that the second and third sensor, which are placed parallel to the solar panel, receive maximum sunlight.
+
+. The Value of LDR4 is maximum. +
+The system is rotated anticlockwise until stopping criterion is met.The rotation again ensures the two middle sensors receive maximum sunlight.
+
+. The Value of LDR2 is maximum.
+.. The difference between the LDR1 and LDR4 is below a given value-threshold. This happens when the Sun is facing the two middle LDRs. Therefore, the stopping condition is met.
+.. LDR4 receives the second highest intensity.Here, the Sun is inclined towards the fourth sensor and so LDR3 doesn't receive the second highest intensity due to the shadowing method.
+Therefore, we rotate towards LDR4(Anti-Clockwise).
+.. LDR1 receives the second highest intensity. Here, the Sun is inclined towards the first sensor and so LDR3 doesn't receive the second highest intensity. 
+Therefore, we rotate towards LDR1(Clockwise).
+.. LDR3 receives the second highest intensity, but the difference between the intensities of LDR1 and LDR4 is very high. 
+Hence we rotate towards the second Photo-Resistor(Clockwise) reducing the intensity for LDR2 and increasing the intensity of LDR3, simultaneously reducing the difference in intensities of both LDR1 and LDR4.
+
+. The Value of LDR3 is maximum.
+.. The difference between the LDR1 and LDR4 is below a given value-threshold.This happens when the Sun is facing the two middle LDRs. Therefore, the stopping condition is met.
+.. LDR4 receives the second highest intensity. Here, the Sun is inclined towards the fourth sensor. 
+Therefore, we rotate towards the LDR4(Anti-Clockwise).
+.. LDR1 receives the second highest intensity. Here, the Sun is inclined towards the first sensor and so LDR2 doesn't receive the second highest intensity due to the shadowing method.
+Therefore, we rotate towards LDR1(Clockwise).
+.. LDR2 receives the second highest intensity, but the difference between the intensities of the LDR1 and LDR4 is very high. Hence we rotate towards the third Photo-Resistor(Anti-Clockwise) reducing the intensity for LDR3 and increasing the intensity of LDR2, simultaneously reducing the difference in intensities of both LDR1 and LDR4.
+
+
+*Code* 
+[source, c]
+----
+#include <Servo.h>
+#include <math.h>
+
+// Declaration of Photo Resistor Variables.
+// These variables will store the Voltage Drop across Photo-Resistors.
+int ldr1;
+int ldr2;
+int ldr3;
+int ldr4;
+
+// Declaring the Servo-motor and its parameter variables
+Servo servo;
+int rotate = -1;
+int servoState = 90;
+int threshold = 10;
+
+void setup()
+{
+    Serial.begin(9600);
+
+    // Specifying the Input Pins of Arduino.
+    pinMode(A0, INPUT);
+    pinMode(A2, INPUT);
+    pinMode(A4, INPUT);
+    pinMode(A5, INPUT);
+
+    // Specifying the Output Pin of Arduino.
+    // We are using the Pin 3 because we want not only the digital ON/OFF state
+    // but also the analog signal to be transmitted.
+    servo.attach(3);
+
+    // Initialising the Servo Motors Angle to 90 degree.
+    servo.write(servoState);
+}
+
+// This code block rotates the Motor by 1° in Clockwise direction.
+void rotateClock()
+{
+    servo.write(servoState + rotate);
+    servoState += rotate;
+    Serial.print(" Clock-Wise Rotation");
+}
+
+// This code block rotates the Motor by 1° in Anti-Clockwise direction.
+void rotateAntiClock()
+{
+    servo.write(servoState - rotate);
+    servoState -= rotate;
+    Serial.print(" Anti-Clock-Wise Rotation");
+}
+
+// This code block stabilizes the Motor.
+void stopRotate()
+{
+    servo.write(servoState);
+    Serial.print(" static");
+}
+
+// The following loop is executed after every 250 milliseconds.
+void loop()
+{  
+    // Reading the Input Values and storing them in the respective variables.
+    int ldr1 = analogRead(A0);
+    int ldr2 = analogRead(A2);
+    int ldr3 = analogRead(A4);
+    int ldr4 = analogRead(A5);
+    Serial.print(ldr1);
+    Serial.print(" ");
+    Serial.print(ldr2);
+    Serial.print(" ");
+    Serial.print(ldr3);
+    Serial.print(" ");
+    Serial.print(ldr4);
+    Serial.print(" ");
+    if (ldr1 > ldr2 && ldr1 > ldr3 && ldr1 > ldr4)  
+        rotateClock();
+    else if (ldr4 > ldr2 && ldr4 > ldr3 && ldr4 > ldr1)
+        rotateAntiClock();
+    else if (ldr2 > ldr3 && ldr2 > ldr1 && ldr2 > ldr4)
+    {
+        if (abs(ldr1 - ldr4) < threshold)
+            stopRotate();
+        else if (ldr4 > ldr1 && ldr4 > ldr3)
+            rotateAntiClock();
+        else if (ldr1 > ldr4 && ldr1 > ldr3)
+            rotateClock();
+        else
+            rotateClock();
+    }
+    else
+    {
+        if (abs(ldr1 - ldr4) < threshold)
+            stopRotate();
+        else if (ldr4 > ldr1 && ldr4 > ldr2)
+            rotateAntiClock();
+        else if (ldr1 > ldr4 && ldr1 > ldr2)
+            rotateClock();
+        else
+            rotateAntiClock();
+    }
+
+    Serial.println(""); // Prints new line
+    delay(250);
+}
+
+
+
+
+----
+
+
+
+===== 6.2.2.2 Schematics 
+
+.Circuit Schematic
+image::schematic.png[]
+
+*Graph*
+
+* *Clockwise Rotation*
+
+.Graph of Clock-wise Rotation
+image::Clockwise_Rotation.png[pdfwidth = 90 %]
+
+<<<
+
+The LDR values are encoded as:
+
+* LDR1 :Blue
+* LDR2 :Red
+* LDR3 :Green
+* LDR4 :Yellow
+
+At first, the assembly was carried out in a dark room. As a result, each of the four LDR values is identical. The first LDR, which was blue, was then powerfully radiated after that. Because of this, the spike in the yellow curve may be seen. The apparatus revolves in a clockwise direction in an attempt to position the light source in the center of the second and third photoresistors. When the values of the two most extreme LDRs (LDR1 and LDR4) fall below a certain threshold, this occurrence takes place. This can be seen by looking at how the blue and yellow curves (LDR1 and LDR4) come together, while the red and green curves (LDR2 and LDR3) are placed above the blue and yellow curves. At this point, the system has satisfied the requirements for stopping, and as a result, rotation has come to a halt. After that, the system was reset to its initial conditions once more.
+
+
+
+
+* *Anti-Clockwise Rotation*
+
+.Graph of AntiClock-wise Rotation
+image::AntiClockwise_Rotation.png[pdfwidth = 90%] 
+
+The LDR values are encoded as: +
+
+* LDR1 :Blue
+* LDR2 :Red
+* LDR3 :Green
+* LDR4 :Yellow
+
+At first, the assembly was carried out in a dark room. As a result, each of the four LDR values is identical.The fourth LDR, which was yellow, was then powerfully radiated after that.. Because of this, the spike in the yellow curve may be seen. The apparatus rotates in the opposite direction of the clock in an effort to position the light source in the middle of the second and third photoresistors. When the values of the two most extreme LDRs (LDR1 and LDR4) fall below a certain threshold, this occurrence takes place. This may be seen by looking at the Blue and Yellow Curves, which are LDR1 and LDR4, and the Red and Green Curves, which are LDR2 and LDR3, which are located above the Blue and Yellow Curves. At this point, the system has satisfied the requirements for stopping, and as a result, rotation has come to a halt. After then, conditions on the system were reset to their original state.
+
+
+== 7.Closure
+
+=== 7.1 Cost
+
+*Embedded Cost*
+
+|===
+|Part |Quantity |Retail Cost per Unit(in Rs) |Bulk Cost per Unit(in Rs) |Total Cost (Single order) | Total Cost (Bulk order)
+
+|LDR Sensor
+|4
+|17
+|4.5
+|68
+|18
+
+|Motor
+|1
+|1062
+|918
+|1062
+|918
+
+|Micro-Controller(Arduino)
+|1
+|325
+|301.75
+|325
+|301.75
+
+|Total
+| 
+| 
+| 
+| Rs.1455
+|1237.75
+|===
+
+
+
+* *LDR Sensor:* This costs an amount of Rs. 90 for 20 pieces and Rs. 17 per piece.
+* *Motor:* This costs Rs. 1062/piece when bought (1 - 999) pieces, Rs. 977/piece for ( 1000 - 4999) pieces and Rs. 918/piece for (>= 5000) pieces (bulk orders).
+* *Microcontroller (Arduino UNO R3):* This costs Rs 325/piece when bought (1-99) pieces, Rs 301.75/piece for (>=100) pieces (bulk orders).
+ 
+We save Rs. 217.25 on part orders when manufacturing in bulk. This results in savings of 15% of retail value of parts.
+
+*Structural Cost*
+
+We use two materials- Steel and Aluminium 3003. The cost of Steel sheets in India is Rs. 315 per kg in retail. Cost of Aluminium 3003 in India is Rs. 210 per kg in retail value.
+
+
+
+|===
+|Part  |Total Cost(in Rs)
+
+|Aluminium L Shaped Holdings
+|1824
+
+|Ball Bearing
+|150
+
+|Steel Base Material
+|2961
+
+|Vertical Rods
+|3805.20
+
+|Total
+|8740.20
+|===
+
+* *Vertical Rods:* The aluminium rods will cost Rs. 1824 for a total weight of 8.69 Kg.
+* *Ball Bearing:* This Costs Rs. 150 in retail market.
+Aluminium L Shaped Holdings: The aluminium L shaped holdings weigh a total of 14.1 Kg which costs Rs. 2961.
+* *Steel Base Material:* This costs Rs. 3805.20 for a weight of 12.08 Kg of steel.
+
+*Total Cost* = 1237.75 + 8740.20 = Rs. 9977.95
+
+
+
+
+
+
+=== 7.2 Government Incentives and Subsidies
+
+
+
+There are a lot of incentives that the Government of India offers to promote the production of green, renewable sources of energy. These programs have been launched as an attempt to encourage the growth of solar industry, and have been proved quite useful in the past.
+
+Firstly, let us start with some Government schemes that might assist us in the production phase:
+
+* *Jawaharlal Nehru National Solar Mission (JNNSM):* This program was launched in 2010 in an attempt to deploy 20,000 W of solar grid power by 2022. Today, the total investment in setting up 100GW is around Rs. 6,00,000 crores. This is an important scheme as GOI is providing Rs. 15,050 crores as capital subsidy to promote solar capacity additions in the country. Businesses can avail upto 30% capital subsidies of the benchmark cost for solar photovoltaic (PV) systems. This would result in an approximate saving of Rs. 18 per watt installed solar PV capacity. The second part of this would include Viability Gap Funding (VGF). The VGF project covers up to 30% of the project cost for grid-connected solar power projects, and 90% of the project cost for off-grid solar power projects. Moreover, it also has a Renewable Purchase Obligation (RPO) under which power distribution companies are mandated to purchase a certain percentage of their power from renewable sources. This is specified by state governments. For example, In Kerala, this percentage is 3%, and it increases by 0.3% every year, to a maximum of 10%. Lastly, JNNMS includes a rooftop solar program which aims to promote use of solar power in residential, commercial, and industrial buildings. It provides subsidies to consumers, which vary on a case-by-case basis.
+
+* *Solar Park Scheme:* The Ministry of New and Renewable Energy (MNRE) aims to set up 25 solar parks to produce 40,000 MW of solar power. Under this scheme, States and Union territories will get benefits, such as the Ministry will provide Central Financial Assistance (CFA) of up to Rs. 25 lakh per solar park. Moreover, CFA of Rs. 20,000 lakh per MW, or 30% of the project cost, whichever is lower, is also provided. This scheme can be availed by mailing proposals to MNRE or SECI.
+
+* *National Clean Energy Fund:* This fund was created in 2010 for funding research projects centered at usage of clean and green technologies. This can be availed by both private and public projects, and aims to provide a funding of up to 40% of the project cost. Approvals are obtained from the Cabinet Committee of Economic Affairs, and can be availed as loans or viability gap funding.
+
+There are many other programs and schemes which might provide some assistance. Launch of Atul Innovation Mission, Make in India, Smart Cities Mission, Startup India, all help in indirect ways for our project. Also, there are many other organizations which promote and help in awareness, such as Clean Energy Access Network (CLEAN), National Institute of Solar Energy (NISE), International Solar Alliance (ISA), etc. Training from any of these would help the project tremendously, and recognition/promotion by them would help in raising funds.
+
+
+
+
+There are a lot of tax benefits that are granted to companies which manufacture solar panels, a list of which is given below:
+
+* *Accelerated Depreciation:* This helps commercial and industrial consumers to discount their investment in a solar power plant at a rate which is significantly higher than other fixed assets. Businesses can claim accelerated depreciation of up to 40% on the cost of solar energy equipment in the year of purchase. This reduces the taxable income of the businesses, and helps lower their tax liability.
+
+* *Goods & Services tax (GST):* Solar panels are eligible for a reduced GST rate of 5%, which further helps in making them affordable for consumers.
+Income Tax Exemption: Businesses that generate income from the sale of solar energy equipment are eligible for tax exemption under Section 80-IA of the Income Tax Act, 1961. Businesses can claim a deduction of over 100% of the profits generated from the sale of the equipment for a period of over 10 years.
+
+* *Customs Duty Exemption:* Solar panels are exempt from customs duty under the Customs Tariff Act, 1975. Importing of equipment is significantly cheaper because of this act.
+
+* *State-Level incentives:* There are a lot of state-level benefits provided by the for the states for solar projects. For example, Tamil Nadu offers a 100% exemption on electricity tax for solar power products. Telangana offers subsidies for residential rooftop solar panel installations. Karnataka charges no VAT on sale of solar energy equipment. All these help in reducing the price of manufacturing as well as sale, which helps companies create a demand which is reasonably priced.
+
+All of these schemes can help in further funding our project, as well as deploying it in useful areas with the help of the Government of India.
+
+
+=== 7.3 Strategic Business partnership
+
+==== 7.3.1 Potential Partner Companies
+
+For our rotating solar panel, we aim to partner with companies from which we can benefit, as it needs to be a beneficial partnership for both the parties involved. Following is a list of options, and the USP they provide:
+
+* *Qualcomm/NVIDIA:* These are leading companies in India which provide various electronics elements and might result in a great partnership considering we need parts like microprocessors for manufacturing. Partnering with these companies would help in better publicity as well as help in getting cheaper raw materials which would thus help in lowering the amount of money invested in each product,
+* *Vedanta/Steel Authority of India:* These companies provide the highest quality of steel, aluminum etc., which could again help lower raw material prices, and help in establishing a brand identity.
+* *Vikram Solar:* Partnering with companies like this would help in the installation process, and also help in gaining the required expertise to establish ourselves as a brand, and gain customer’s trust.
+* *NISE/IISC/SSS-NIRE:* Lastly, we can partner with several R&D institutes in India, which can help us in bettering our product, adding in improvements, lowering the cost by optimal utilization, and lastly, creating a bran value which people trust.
+
+==== 7.3.2 Distribution Strategy
+
+We would be primarily looking at two aspects of distribution- Businesses-to-Business (B2B), Business-to-Consumer (B2C), and partnerships with already existing players as mentioned above.
+
+Under the B2B category, possible ways of distribution include:
+
+* *Partnerships with Builders and Contractors*
+** Partnering with major builders and contractors who specialize in constructing commercial and industrial buildings like Larsen & Toubro Limited, Shapoorji Pallonji Group etc. to offer them exclusive access to the new solar panel models can ensure expanded reach within multiple industries. Proper training in installation and maintenance can then be provided by us.
+** We could also offer combined advertising for all parties to expand awareness about the product, which would provide a unique marketing advantage to the contractors.
+
+
+
+* *Government Contracts*
+** Submit bids for government contracts that require the installation of solar panels on government buildings or projects for which we need to ensure all regulatory requirements are met. This would allow for subsidies on a lot of raw materials and processing costs.
+** Competitive pricing can then be offered through corporate partnerships and funding with bigger players in the industry mentioned above.
+
+* *Energy Service Companies (ESCOs)*
+** Partnering with ESCOs like ACME Cleantech Solutions Private Limited, an ESCO that offers renewable energy solutions and energy-efficient products and services or Energy Efficiency Services Limited (EESL), a government-owned energy service company that provides energy efficiency services and implements energy conservation measures.
+** Offering solar panel solutions as a part of the ESCO's energy efficiency package to help businesses reduce their energy consumption and costs as well as providing financing options to help them secure more clients.
+Marketing Strategy
+
+For the marketing strategies, we are going to look at a couple of methods using which we can promote our product:
+
+* *Brand Identity:* Brand image is one of the most important parts of any company. It is why people prefer one product over the another, and it is why businesses also tend to prefer one particular company over the other. Establishing a brand identity can be achieved by creating a unique logo and brand slogan, something which portrays the true essence of the company, and developing marketing materials such as billboards, ads, etc. which are different but relevant to the audience. It is also important to do this in a way that all of the target market audience can easily view and purchase our product.
+* *Website:* In the world of digitalization, people prefer to research and buy their products online. Thus, it becomes increasingly important to build a website which is appealing, has all the relevant information, but is also concise. It should clearly indicate the company’s mission, values, USP, and products. It is also important to try to partner with as many online sales platforms as possible, so that we can increase our outreach, and people have easy access to our products.
+* *Social Media Marketing:* As mentioned before, we live in a world where people get most of their information online. To reach these people, we need to build a strong social media presence. This can be achieved through promotions and reviews on platforms like LinkedIn, Twitter, Facebook, where people spend a lot of time. It is also imperative to make our account as transparent and respondent as possible.
+* *Events & Exhibitions:* There are a lot of government and private entities which visit expos and exhibitions to understand the new technology and to look for the best players to employ. Thus, attending/hosting events which are related to renewable energy can help in promoting our product, as well as in establishing our company as a though leader in the market.
+
+=== 7. 4 Maintenance
+
+*LDR*  
+
+An LDR has an operating temperature range between -40°C to 85°C. In moderate weather conditions, the GL5528 LDR sensor could last for several years, up to 10 years or more. However, in extreme conditions which include high temperatures, extreme cold, or high humidity we observe significant reduction in the lifespan of the sensor.
+
+LDRs are not specifically designed to be used in the rain as the water can cause damage to the sensitive surface of the LDR or create a short circuit. These lead to low accuracy of the LDR sensor and also reduction in its lifespan.
+
+To protect LDR sensor from effects of high moisture we could apply some methods like, using :
+
+* *Waterproof tape:* Wrapping the LDR with waterproof tape, ensuring that it is tightly sealed.
+* *Silicone sealant:* Applying a small amount of sealant around the base of the LDR, makes sure that it is completely sealed.
+* *Enclosure:* LDR can be placed inside an enclosure to protect it from moisture. It could be made up of plastic or metal which would lead to an increase in cost.
+* *Waterproof bags:* Place the LDR in a waterproof bag. This is a quick and easy way as the bag can be easily replaced upon damage.
+ 
+These methods might lead to reduction in efficiency so we must calculate the loss in efficiency and the prolonged lifetime of the component. 
+
+*Motor* 
+
+In general, high-quality motors (designed and manufactured for industrial use) can have a lifespan of 15 to 20 years if properly maintained and operated under normal conditions.
+ 
+*Semiconductor Components* 
+
+The pure semiconductor components, like the microcontroller and other chips can live and run for 20 - 30 years without any problem, if they aren't destroyed by some event. Such an event could be electrical discharge (ESD), or over voltages from nearby switching devices or other transients like from lightning. Installation being well protected from these events the semiconductors won't be the problem. +
+The Arduino ATmega48A/PA/88A/PA/168A/PA/328/P has data retention of up to 20 years if it is operated at 85°C and 100 years at 25°C. 
+
+*Resistors* 
+
+Resistors are quite stable electronic components. If installed properly (avoiding any unusual physical stresses and soldering correctly), they can function exceptionally well for more than 30 years. Temperature ranges of -50° C to 155° C and voltage ranges of up to 400 Volts are suitable for our application.
+
+*Base and Ball Bearings* 
+
+Grease, mineral oil, or synthetic oil may be used for ball bearings. However, since grease and synthetic oil are utilized in high-temperature situations and we are not dealing with them, mineral oil would suffice (grease is a more cost-effective option).
+The structure which consists of a slot on the base of the stand of the solar panel provided allows easy maintenance and replacements.
+
+Stress Limits of Alloy 3003:
+
+[cols="50%,30,30",options="header",]
+|===
+|Mechanical Properties |Metric |English
+
+|Ultimate Tensile Strength
+| 200 MPa
+| 29000 psi
+
+|Tensile Yield Strength
+| 186 MPa
+| 27000 psi
+
+|Shear Strength
+| 110 MPa
+| 16000 psi
+
+|Modulus of Elasticity
+| 68.9 Pa
+| 10000 ksi
+
+|Shear Modulus
+| 25 GPa
+| 3630 ksi
+|===
+
+
+And in our design, tensions are significantly below the limits (10^4^ Pa). Also, Aluminum has an average environmental life cycle of sixty years (in static applications such as structures and construction).
+
+
+
+<<<
+== 8. References
+
+[1] S. Liu, Y. Liu, J. Li, Y. Li, and X. Chen, "A low-cost dual-axis solar tracking system based on digital logic design: Design and implementation," Journal of Renewable and Sustainable Energy, vol. 12, no. 1, p. 015005, 2020.
+
+[2] P. Dunne, "What Is The Best Angle For Solar Panels: Tips For A Good Solar Panel Angle," Forbes, Nov. 2020.
+
+[3] M. A. Rahman, M. R. Karim, and M. H. Ali, "Design and Analysis of a Low-Cost Solar Tracker," Energies, vol. 9, no. 9, p. 717, Aug. 2016. doi: 10.3390/en9090717.
+
+[4] F. M. Hadi, A. H. A. Bakar, and M. A. Othman, "Material Selection for Solar Tracking System," in 2018 4th International Conference on Science and Technology (ICST), 2018, pp. 1-4. doi:10.1109/ICSTC.2018.8536349
+
+[5] Renewable Watch, "Materials Analysis," [Online]. Available: https://renewablewatch.in/2019/06/28/materials-analysis/.[Accessed: Mar. 28, 2023].
+
+[6] S. Schöberl and S. Völker, "A Guide to Mounting Structures for Solar Panels PV," [Online]. Available: https://sinovoltaics.com/solar-basics/a-guide-to-mountingstructures-for-solar-panels-pv/
+
+[7] Solar Feeds, "Solar Trackers: Types and Its Advantages and Disadvantages," Solar Feeds Magazine, May 10, 2021, https://www.solarfeeds.com/mag/solar-trackers-types-and-its-advantages-and-disadvantages/.
+
+[8] SolarSquare, "What is a Solar Tracker and How Does it Work?" SolarSquare Blog, Aug. 16, 2021, https://www.solarsquare.in/blog/solar-tracker/.
+
+[9] M. H. Ali, "Design and Simulation of a Sun Tracking Solar Power System," ResearchGate, 2020. https://www.researchgate.net/publication/344535084_Design_and_Simulation_of_a_Sun_Tracking_Solar_Power_System.
+
+[10] UPS Battery Center, "Materials Needed: Solar Panel Installation," UPS Battery Center Blog, November{nbsp}17,{nbsp}2020.{nbsp}https://www.upsbatterycenter.com/blog/materials-needed-solar-panel-installation/#:~:text=The%20materials%20that%20are%20required,panels%20to%20the%20mounting%20frame%3B
+
+[11] ScienceDirect, "Single-Axis Tracking," ScienceDirect Topics. https://www.sciencedirect.com/topics/engineering/single-axis-tracking.
+
+[12] Ecolifemaster.com, "Cylindrical Solar Panels: Advantages and Disadvantages," [Online]. Available: https://ecolifemaster.com/cylindrical-solar-panels-advantages-and-disadvantages/
+
+[13] SolarReviews, "Cylindrical Solar Panels: What You Need to Know," SolarReviews Blog, 27 November 2019. [Online]. Available: https://www.solarreviews.com/blog/cylindrical-solar-panels-what-you-need-to-know
+
+[14] Sunpreme, "Cylindrical Solar Panels," [Online]. Available: https://sunpreme.com/products/cylindrical-solar-panels/
+
+[15] "Buy Sell Stainless, "Stainless Steel Price - SS304, SS316, SS310 Chennai," Buy Sell Stainless, [Online]. Available:{nbsp}https://buysellstainless.com/stainless-steel-price-ss304-ss316-ss310-chennai/ ."
+
+[16] IndiaMART, "Aluminum Frame for Solar Module," IndiaMART, accessed April 2, 2023. [Online]. Available:{nbsp}https://www.indiamart.com/proddetail/aluminum-frame-for-solar-module-23839715433.html
+
+[17] Aqua-Calc, "Aluminum price conversions, cost calculator," Aqua-Calc, [Online]. Available: https://www.aqua-calc.com/calculate/materials-price/substance/aluminum.
+
+[18] EnergySage, "What is the average size and weight of solar panels?," EnergySage, [Online]. Available: https://news.energysage.com/average-solar-panel-size-weight/.
+
+[19] SMB Bearings Ltd., "What are Ball Bearings Made of?," SMB Bearings, [Online]. Available: https://www.smbbearings.com/what-are-ball-bearings-made-of.
+
+[20] Texas Instruments, "MSP430 Datasheet (PDF) - Texas Instruments," [Online]. Available: https://pdf1.alldatasheet.com/datasheet-pdf/view/465689/TI1/MSP430.html.
+
+[21]Texas Instruments, "MSP430x5xx and MSP430x6xx Family User’s Guide(Rev. Q)," [Online].  Available:{nbsp}https://www.ti.com/lit/ug/slau208q/slau208q.pdf?ts=1680413119720&ref_url=https%253A%252F%252Fwww.google.com%252F.
+
+[22] Texas Instruments, "Product details," [Online]. Available: https://www.digikey.com/en/products/detail/texas-instruments/MSP430F6746AIPZR/5232457.
+
+[23] A. Syam and D. Irfan, "The analysis of permanent magnet and wound rotor induction motor drive in electric vehicle," in IOP Conference Series: Materials Science and Engineering, vol. 352, no. 1, 2018, doi: 10.1088/1757-899X/352/1/012023.
+
+[24] "Permanent Magnet DC Stepper Motors - Working & Characteristics," Electrical Easy, Dec. 2014. [Online].{nbsp}Available:{nbsp}https://www.electricaleasy.com/2014/12/permanent-magnet-dc-stepper-motors.html.
+
+[25] J. Lee, "Induction vs. Permanent Magnet Motor Efficiency in EVs," Horizon Technology, Dec. 2018. [Online]. Available: https://www.horizontechnology.biz/blog/induction-vs-permanent-magnet-motor-efficiency-auto-electrification.
+
+[26] Vishay Semiconductors. "GL5528 Datasheet," [Online]. Available: https://www.vishay.com/docs/81579/gl5528.pdf.
+
+[27] Vishay Semiconductors. "GL5537 Datasheet," [Online]. Available: https://www.vishay.com/docs/81579/gl5537.pdf.
+
+[28]{nbsp}Osram{nbsp}Opto{nbsp}Semiconductors,{nbsp}"SFH{nbsp}5712{nbsp}Datasheet,"{nbsp}[Online]. Available:{nbsp}https://www.osram.com/ecat/SFH%205712/com/en/class_pim_web_catalog_103489/.
+
+[29]{nbsp}Osram{nbsp}Opto{nbsp}Semiconductors.{nbsp}"SFH{nbsp}5712{nbsp}Datasheet,"{nbsp}[Online].{nbsp}Available:{nbsp}https://www.osram.com/ecat/SFH%205712/com/en/class_pim_web_catalog_103489/.
+
+[30]{nbsp}ROHM{nbsp}Semiconductor.{nbsp}"RP-L7014{nbsp}Datasheet,"{nbsp}[Online].{nbsp}Available:{nbsp}https://www.rohm.com/datasheet/RP-L7014.pdf.
+
+[31]{nbsp}ROHM{nbsp}Semiconductor.{nbsp}"RP-L7024{nbsp}Datasheet,"{nbsp}[Online].{nbsp}Available:{nbsp}https://www.rohm.com/datasheet/RP-L7024.pdf.
+
+[32]{nbsp}Excelitas{nbsp}Technologies.{nbsp}"VTD20{nbsp}Datasheet,"{nbsp}[Online].{nbsp}Available:{nbsp}https://www.excelitas.com/product/vtd20.
+
+[33]{nbsp}Excelitas{nbsp}Technologies.{nbsp}"VTD50{nbsp}Datasheet,"{nbsp}[Online].{nbsp}Available:{nbsp}https://www.excelitas.com/product/vtd50.
+
+[34] What{nbsp}is{nbsp}PWM?,4QD,[Online]. Available: https://www.4qd.co.uk/docs/what-is-pwm/#:~:text=If
+
+<<<
+
+== 9. Document Statistics
+
+=== 9.1 Text Statistics
+
+[cols="<,<,<,<,<", options="header",]
+|=====
+|*Word Count*|# Lexical Diversity|# Lexical Density|# Sentences|# Character Length
+|11533|53%|66.3%|1132|56081
+|*# Syllables*|*Avg # of words per sentence*|*Avg # of characters per sentence*|*# Letters*|*Avg # of syllables per word*
+|19145|9.7|55.22|52274|1.66
+|=====
+
+
+
+=== 9.2 Readability Statistics
+
+[cols="2,1",options="header",]
+|===
+|Readability Index |Score 
+|Flesch Reading Ease score >|64.13
+|Gunning Fog Score >|6.96 
+|Flesch-Kincaid Grade level >|4.94
+|The Coleman-Liau Index >|1.01
+|Automated Readability Index >|2.74
+|SMOG Formula score >|6.67
+|Linsear Write Formula Score >|8.2
+|===
+
+=== 9.3 List of Abbreviations
+
+* *IF*   : Involvement Factor
+* *PWM*  : Pulse Width Modulation
+* *GPS*  : Global Positioning System
+* *ASCE* : American Society of Civil Engineers
+* *RTC* : Real-Time Clock
+* *SAE* : Society of Automotive Engineers
+* *AISI* : American Iron and Steel Institute
+* *MCU* : Micro-Controller Unit
+* *MSP* :  Mixed Signal Processing
+* *MIPS* : Million Instructions Per Second
+* *SAR* : Successive Approximation Register
+
+=== 9.4 List of Figures
+
+[cols="5%, 40%",options = "header"]
+|===
+|Sr. No.|Name
+
+>|1
+|Requirements Map
+
+>|2
+|Specifications Mind Map
+
+>|3
+|Arduino UNO 
+
+>|4
+|DC Motor 1
+
+>|5
+|DC Motor 2
+
+>|6
+|Sensor
+
+>|7
+|Design Mind Map
+
+>|8
+|Discarded Design 1
+
+>|9
+|Discarded Design 3
+
+>|10
+|Assembly Isometric View
+
+>|11
+|Assembly Side View
+
+>|12
+|Assembly Front View
+
+>|13
+|Assembly Top View
+
+>|14
+|L-Shaped Plates
+
+>|15
+|L-Shaped Isometric View
+
+>|16
+|Slider
+
+>|17
+|Slider Isometric View
+
+>|18
+|Rod Technical Drawing
+
+>|19
+|Rod Isometric View
+
+>|20
+|Ball Bearing Technical Drawing
+
+>|21
+|Ball Bearing Isometric View
+
+>|22
+|Gear 1 Isometric View
+
+>|23
+|Gear 2 Isometric View
+
+>|24
+|Base Isometric View
+
+>|25
+|Cad Positioning
+
+>|26
+|Schematic
+
+>|27
+|Clockwise Rotation Graph
+
+>|28
+|AntiClockwise Rotation Graph
+
+>|29
+|Gantt Chart
+
+>|30
+|Tribe Framework
+
+|===
+
+=== 9.5 Gantt Chart
+
+.Gantt-chart
+image::Gchart.png[650,650]
+
+<<<
+
+== 10. Tribe Members
+
+[cols="10%,33%,55%,50%,40%,10%",options = "header"]
+|===
+|Sr. No.|Entry Number|Name|Email ID|Vertical|IF
+
+>|1
+|2020MT10800
+|Divyansh Mohan Bansal
+|mt1200800@iitd.ac.in
+|Coordinator
+>|1
+
+>|2
+|2020MT10835
+|Ravi Raj Kumawat
+|mt1200835@iitd.ac.in
+|Logistics
+>|1
+
+>|3
+|2020MT10656
+|Mohammad Areeb
+|mt1200656@iitd.ac.in
+|Technical Head
+>|1
+
+>|4
+|2020MT10852
+|Shreyansh Jain
+|mt1200852@iitd.ac.in
+|Technical Head
+>|1
+
+>|5
+|2020MT10778
+|Aashish Kumar
+|mt1200778@iitd.ac.in
+|Design
+>|1
+
+>|6
+|2020MT10805
+|Hanish Goyal
+|mt1200805@iitd.ac.in
+|Design
+>|1
+
+>|7
+|2020EE11002
+|Arshia
+|ee1201002@iitd.ac.in
+|Design
+>|1
+
+>|8
+|2020EE30605
+|Muvva Srija
+|ee3200605@iitd.ac.in
+|Design
+>|1
+
+>|9
+|2020MT10793
+|Basani Tharuni
+|mt1200793@iitd.ac.in
+|Design
+>|1
+
+>|10
+|2020MT10780
+|Abhinav Sharma
+|mt1200780@iitd.ac.in
+|Design
+>|1
+
+>|11
+|2020EE10564
+|Valla Chaitanya Krishna
+|ee1200564@iitd.ac.in
+|Design
+>|1
+
+>|12
+|2020MT10782
+|Adarsh Roy
+|mt1200782@iitd.ac.in
+|Design
+>|1
+
+>|13
+|2020MT60883
+|M. Unnathi Suneel
+|mt6200883@iitd.ac.in
+|Design
+>|1
+
+>|14
+|2020MT60889
+|Sai Kiran Gunnala
+|mt6200889@iitd.ac.in
+|Design
+>|1
+
+>|15
+|2020MT60234
+|Ayush Mishra
+|mt6200234@iitd.ac.in
+|Design
+>|1
+
+>|16
+|2020MT10811
+|Jatin Jangpangi
+|mt1200811@iitd.ac.in
+|Design
+>|0.3
+
+>|17
+|2019MT10698
+|Kanishk Singhal
+|mt1190698@iitd.ac.in
+|Design
+>|0.7
+
+>|18
+|2020EE10507
+|Kunal
+|ee1200507@iitd.ac.in
+|Design
+>|1
+
+>|19
+|2020EE30122
+|Rishabh Singh
+|ee3200122@iitd.ac.in
+|Design
+>|1
+
+>|20
+|2019MT60628
+|Harsh Sharma
+|mt6190628@iitd.ac.in
+|Design
+>|0.5
+
+>|21
+|2020EE30601
+|Kanta Meena
+|ee3200601@iitd.ac.in
+|Design
+>|1
+
+>|22
+|2020MT10783
+|Aditya Agrawal
+|mt1200783@iitd.ac.in
+|Research I
+>|1
+
+>|23
+|2020MT60875
+|Dev Verma
+|mt6200875@iitd.ac.in
+|Research I
+>|1
+
+>|24
+|2020MT10817
+|Madhav Goel
+|mt1200817@iitd.ac.in
+|Research I
+>|1
+
+>|25
+|2020MT60870
+|Arpit Goyal
+|mt6200870@iitd.ac.in
+|Research I
+>|1
+
+>|26
+|2020MT60867
+|Ajay Kumar
+|mt6200867@iitd.ac.in
+|Research II
+>|1
+
+>|27
+|2020MT60873
+|Bhavik Sankhla
+|mt6200873@iitd.ac.in
+|Research II
+>|1
+
+>|28
+|2020MT10819
+|Mayunish Agarwal
+|mt1200819@iitd.ac.in
+|Research II
+>|1
+
+>|29
+|2020MT10825
+|Nikhil Agarwal
+|mt1200825@iitd.ac.in
+|Research II
+>|1
+
+>|30
+|2020MT60618
+|Priyanshu Yadav
+|mt6200618@iitd.ac.in
+|Research II
+>|0.5
+
+>|31
+|2020MT10794
+|Brahamjot Singh
+|mt1200794@iitd.ac.in
+|Research III
+>|1
+
+>|32
+|2020EE10453
+|Aarya Oganja
+|ee1200453@iitd.ac.in
+|Research III
+>|0.5
+
+>|33
+|2020EE10485
+|Chandrakant Rajput
+|ee1200485@iitd.ac.in
+|Research III
+>|1
+
+>|34
+|2020MT60880
+|Kanishka Singh
+|mt6200880@iitd.ac.in
+|Research III
+>|1
+
+>|35
+|2020EE30628
+|Srishti Sachan
+|ee3200628@iitd.ac.in
+|Research III
+>|0.5
+
+>|36
+|2020MT10814
+|Krishna Kumar Singh
+|mt1200814@iitd.ac.in
+|Research IV
+>|1
+
+>|37
+|2020EE10555
+|Shubham Raj
+|ee1200555@iitd.ac.in
+|Research IV
+>|1
+
+>|38
+|2020EE10543
+|Sachin Kumar
+|ee1200543@iitd.ac.in
+|Research IV
+>|1
+
+>|39
+|2020MT10833
+|Rahul Kumar
+|mt1200833@iitd.ac.in
+|Research V
+>|1
+
+>|40
+|2020MT60892
+|Shivam Jharwal
+|mt6200892@iitd.ac.in
+|Research V
+>|1
+
+>|41
+|2019MT10678
+|Ayan Jain
+|mt1190678@iitd.ac.in
+|Research V
+>|1
+
+>|42
+|2020MT10788
+|Ankit Kumar
+|mt1200788@iitd.ac.in
+|Research V
+>|0.8
+
+>|43
+|2020MT10855
+|Smrati Tripathi
+|mt1200855@iitd.ac.in
+|Research VI
+>|1
+
+>|44
+|2020EE10565
+|Vanchanagiri Alekhya
+|ee1200565@iitd.ac.in
+|Research VI
+>|1
+
+>|45
+|2020MT10862
+|Vineet Kumar
+|mt1200862@iitd.ac.in
+|Research VI
+>|1
+
+>|46
+|2020EE10483
+|Bolledhu Sree Divya
+|ee1200483@iitd.ac.in
+|Research VI
+>|1
+
+>|47
+|2020EE10487
+|Dhruvendra
+|ee1200487@iitd.ac.in
+|Research VI
+>|0.1
+
+>|48
+|2020EE10553
+|Shrey Chandra
+|ee1200553@iitd.ac.in
+|Research VII
+>|0.1
+
+>|49
+|2020EE10310
+|Upasak Sharma
+|ee1200310@iitd.ac.in
+|Research VII
+>|1
+
+>|50
+|2020EE10455
+|Abhay Saini
+|ee1200455@iitd.ac.in
+|Research VII
+>|1
+
+>|51
+|2020EE10510
+|Maitree Shandilya
+|ee1200510@iitd.ac.in
+|Research VII
+>|1
+
+>|52
+|2020MT10791
+|Atharva Suryawanshi
+|mt1200791@iitd.ac.in
+|Documentation
+>|1
+
+>|53
+|2020MT10853
+|Shubh Harkawat
+|mt1200853@iitd.ac.in
+|Documentation
+>|1
+
+>|54
+|2020EE30623
+|Sanya Mehadia
+|ee3200623@iitd.ac.in
+|Documentation
+>|0.2
+
+>|55
+|2020MT10831
+|Pratik Behera
+|mt1200831@iitd.ac.in
+|Documentation
+>|1
+
+>|56
+|2020MT60865
+|Aakrity Pandey
+|mt6200865@iitd.ac.in
+|Documentation
+>|1
+
+>|57
+|2019MT10685
+|Deepak
+|mt1190685@iitd.ac.in
+|Documentation
+>|1
+
+>|58
+|2020EE10603
+|Kushagra
+|ee1200603@iitd.ac.in
+|Documentation
+>|1
+
+>|59
+|2019EE30579
+|Manya Aggarwal
+|ee3190579@iitd.ac.in
+|Documentation
+>|1
+
+>|60
+|2020MT60884
+|Naman Agrawal
+|mt6200884@iitd.ac.in
+|Documentation
+>|1
+
+>|61
+|2020EE10537
+|Rani Meena
+|ee1200537@iitd.ac.in
+|Documentation
+>|1
+
+>|62
+|2020MT10836
+|Rhythm Gupta
+|mt1200836@iitd.ac.in
+|Documentation
+>|1
+
+>|63
+|2020MT10808
+|Harshvardhan Patel
+|mt1200808@iitd.ac.in
+|Documentation
+>|1
+
+>|64
+|2019MT10682
+|Ojas Bhamare
+|mt1190682@iitd.ac.in
+|Documentation
+>|0.7
+
+>|65
+|2020EE30629
+|Suhani Agrawal
+|ee3200629@iitd.ac.in
+|Documentation
+>|1
+
+>|66
+|2020MT60895
+|V. Sai Niketh
+|mt6200895@iitd.ac.in
+|Documentation
+>|1
+
+>|67
+|2020MT10823
+|Mohit Kumar Gond
+|mt1200823@iitd.ac.in
+|Documentation
+>|1
+
+|===
+
+{nbsp} +
+{nbsp} +
+{nbsp} +
+{nbsp} +
+
+[.center]
+.Tribe-Framework
+image::Tribe Framework.png[IITD_logo,alt="IITD",width=900,height=1200,float="center"]
+
